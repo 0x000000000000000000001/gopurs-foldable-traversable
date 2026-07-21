@@ -1,0 +1,14 @@
+package:
+  name: foldable-traversable
+  dependencies:
+    - bifunctors
+    - const
+    - control
+    - either
+    - functors
+    - identity
+    - maybe
+    - newtype
+    - orders
+    - prelude
+    - tuples
