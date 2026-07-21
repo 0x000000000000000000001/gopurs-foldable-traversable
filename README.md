@@ -1,4 +1,4 @@
-# purescript-foldable-traversable
+# gopurs-foldable-traversable
 
 [![Latest release](http://img.shields.io/github/release/purescript/purescript-foldable-traversable.svg)](https://github.com/purescript/purescript-foldable-traversable/releases)
 [![Build status](https://github.com/purescript/purescript-foldable-traversable/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-foldable-traversable/actions?query=workflow%3ACI+branch%3Amaster)
