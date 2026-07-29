@@ -1,7 +1,7 @@
-func MapWithIndexArray(f func(int) func(interface{}) interface{}, xs []interface{}) []interface{} {
+func MapWithIndexArray(f func(int64, interface{}) interface{}, xs []interface{}) []interface{} {
 	result := make([]interface{}, len(xs))
 	for i, x := range xs {
-		result[i] = f(i)(x)
+		result[i] = f(int64(i), x)
 	}
 	return result
 }
