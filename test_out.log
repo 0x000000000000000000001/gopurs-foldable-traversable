@@ -1,0 +1,224 @@
+=== Building project with spago ===
+Reading Spago workspace configuration...
+
+✓ Selecting package to build: foldable-traversable
+
+Downloading dependencies...
+No lockfile found, generating it...
+Lockfile written to spago.lock. Please commit this file.
+Building...
+[  1 of 161] Compiling Unsafe.Coerce
+[  2 of 161] Compiling Type.Proxy
+[  3 of 161] Compiling Type.Equality
+[  4 of 161] Compiling Record.Unsafe
+[  5 of 161] Compiling Partial
+[  6 of 161] Compiling Data.Void
+[  7 of 161] Compiling Data.Unit
+[  8 of 161] Compiling Spago.Generated.BuildInfo
+[  9 of 161] Compiling Data.Traversable.Accum
+[ 10 of 161] Compiling Data.NaturalTransformation
+[ 11 of 161] Compiling Data.Boolean
+[ 12 of 161] Compiling Data.Int.Bits
+[ 13 of 161] Compiling Control.Semigroupoid
+[ 15 of 161] Compiling Data.Symbol
+[ 16 of 161] Compiling Control.Lazy
+[ 17 of 161] Compiling Safe.Coerce
+[ 14 of 161] Compiling Data.Function.Uncurried
+[ 18 of 161] Compiling Partial.Unsafe
+[ 19 of 161] Compiling Control.Category
+[ 20 of 161] Compiling Data.Exists
+[ 21 of 161] Compiling Data.HeytingAlgebra
+[ 22 of 161] Compiling Data.Semiring
+[ 23 of 161] Compiling Data.Semigroup
+[ 24 of 161] Compiling Data.Show
+[ 25 of 161] Compiling Data.Ring
+[ 26 of 161] Compiling Data.Generic.Rep
+[ 28 of 161] Compiling Data.BooleanAlgebra
+[ 27 of 161] Compiling Data.Eq
+[ 29 of 161] Compiling Data.CommutativeRing
+[ 30 of 161] Compiling Data.Ordering
+[ 31 of 161] Compiling Data.EuclideanRing
+[ 32 of 161] Compiling Data.Ord
+[ 33 of 161] Compiling Data.DivisionRing
+[ 34 of 161] Compiling Data.Field
+[ 35 of 161] Compiling Data.Monoid
+[ 37 of 161] Compiling Data.Bounded
+[ 36 of 161] Compiling Data.Reflectable
+[ 38 of 161] Compiling Data.Function
+[ 39 of 161] Compiling Data.Functor
+[ 42 of 161] Compiling Control.Alt
+[ 40 of 161] Compiling Control.Extend
+[ 41 of 161] Compiling Control.Apply
+[ 43 of 161] Compiling Data.Bounded.Generic
+[ 44 of 161] Compiling Data.Monoid.Generic
+[ 45 of 161] Compiling Control.Plus
+[ 46 of 161] Compiling Control.Comonad
+[ 47 of 161] Compiling Control.Applicative
+[ 48 of 161] Compiling Control.Alternative
+[ 49 of 161] Compiling Control.Bind
+[ 50 of 161] Compiling Control.Monad
+[ 51 of 161] Compiling Prelude
+[ 52 of 161] Compiling Control.MonadPlus
+[ 53 of 161] Compiling Data.Eq.Generic
+[ 54 of 161] Compiling Data.Semiring.Generic
+[ 55 of 161] Compiling Data.Ring.Generic
+[ 56 of 161] Compiling Data.Monoid.Disj
+[ 57 of 161] Compiling Data.Show.Generic
+[ 58 of 161] Compiling Data.Ord.Generic
+[ 60 of 161] Compiling Data.Semigroup.First
+[ 59 of 161] Compiling Data.HeytingAlgebra.Generic
+[ 61 of 161] Compiling Data.Monoid.Conj
+[ 62 of 161] Compiling Data.Traversable.Accum.Internal
+[ 63 of 161] Compiling Data.Monoid.Endo
+[ 64 of 161] Compiling Data.Number.Format
+[ 65 of 161] Compiling Data.Semigroup.Last
+[ 66 of 161] Compiling Data.Monoid.Additive
+[ 67 of 161] Compiling Data.Semigroup.Generic
+[ 68 of 161] Compiling Data.Monoid.Multiplicative
+[ 69 of 161] Compiling Data.Monoid.Dual
+[ 70 of 161] Compiling Effect
+[ 71 of 161] Compiling Effect.Class
+[ 72 of 161] Compiling Effect.Unsafe
+[ 73 of 161] Compiling Effect.Uncurried
+[ 74 of 161] Compiling Effect.Ref
+[ 75 of 161] Compiling Effect.Console
+[ 76 of 161] Compiling Data.Newtype
+[ 78 of 161] Compiling Test.Assert
+[ 77 of 161] Compiling Effect.Class.Console
+[ 79 of 161] Compiling Data.Ord.Max
+[ 80 of 161] Compiling Data.Monoid.Alternate
+[ 81 of 161] Compiling Data.Ord.Min
+[ 82 of 161] Compiling Data.Ord.Down
+[ 83 of 161] Compiling Data.Functor.App
+[ 84 of 161] Compiling Data.Profunctor
+[ 85 of 161] Compiling Data.Profunctor.Closed
+[ 86 of 161] Compiling Data.Functor.Invariant
+[ 87 of 161] Compiling Data.Functor.Compose
+[ 89 of 161] Compiling Data.Const
+[ 88 of 161] Compiling Data.Tuple
+[ 90 of 161] Compiling Data.Identity
+[ 91 of 161] Compiling Data.Maybe
+[ 92 of 161] Compiling Data.Profunctor.Join
+[ 93 of 161] Compiling Data.Profunctor.Split
+[ 94 of 161] Compiling Data.Functor.Contravariant
+[ 95 of 161] Compiling Data.Comparison
+[ 96 of 161] Compiling Data.Op
+[ 97 of 161] Compiling Data.Predicate
+[ 98 of 161] Compiling Data.Equivalence
+[ 99 of 161] Compiling Data.Number
+[102 of 161] Compiling Data.Maybe.First
+[101 of 161] Compiling Data.Maybe.Last
+[100 of 161] Compiling Data.Either
+[103 of 161] Compiling Data.Number.Approximate
+[104 of 161] Compiling Data.Int
+[105 of 161] Compiling Data.Divide
+[106 of 161] Compiling Data.Profunctor.Costrong
+[109 of 161] Compiling Data.Distributive
+[108 of 161] Compiling Data.Profunctor.Strong
+[107 of 161] Compiling Data.Tuple.Nested
+[110 of 161] Compiling Performance.Minibench
+[111 of 161] Compiling Data.Divisible
+[112 of 161] Compiling Data.Decide
+[113 of 161] Compiling Data.Either.Inject
+[114 of 161] Compiling Data.Bifunctor
+[115 of 161] Compiling Data.Either.Nested
+[116 of 161] Compiling Data.Profunctor.Cochoice
+[117 of 161] Compiling Data.Profunctor.Choice
+[118 of 161] Compiling Effect.Exception
+[119 of 161] Compiling Data.Functor.Product
+[120 of 161] Compiling Control.Monad.Rec.Class
+[122 of 161] Compiling Control.Biapply
+[121 of 161] Compiling Data.Functor.Coproduct
+[123 of 161] Compiling Effect.Exception.Unsafe
+[124 of 161] Compiling Data.Functor.Costar
+[125 of 161] Compiling Data.Profunctor.Star
+[126 of 161] Compiling Data.Decidable
+[127 of 161] Compiling Control.Biapplicative
+[128 of 161] Compiling Data.Functor.Clown
+[129 of 161] Compiling Data.Functor.Joker
+[130 of 161] Compiling Data.Bifunctor.Join
+[131 of 161] Compiling Data.Functor.Product2
+[132 of 161] Compiling Data.Functor.Flip
+[134 of 161] Compiling Data.Functor.Coproduct.Inject
+[133 of 161] Compiling Data.Functor.Coproduct.Nested
+[135 of 161] Compiling Data.FunctorWithIndex
+[136 of 161] Compiling Data.Functor.Product.Nested
+[137 of 161] Compiling Data.Foldable
+[138 of 161] Compiling Control.Monad.ST.Internal
+[139 of 161] Compiling Control.Monad.ST.Uncurried
+[140 of 161] Compiling Control.Monad.ST.Ref
+[141 of 161] Compiling Control.Monad.ST
+[142 of 161] Compiling Control.Monad.ST.Global
+[143 of 161] Compiling Control.Monad.ST.Class
+[144 of 161] Compiling Data.Array.ST
+[146 of 161] Compiling Data.Array.ST.Partial
+[145 of 161] Compiling Data.Array.ST.Iterator
+[147 of 161] Compiling Data.Semigroup.Foldable
+[148 of 161] Compiling Data.Bifoldable
+[149 of 161] Compiling Data.Traversable
+[150 of 161] Compiling Data.FoldableWithIndex
+[151 of 161] Compiling Data.Semigroup.Traversable
+[152 of 161] Compiling Data.Bitraversable
+[153 of 161] Compiling Data.Unfoldable1
+[154 of 161] Compiling Data.TraversableWithIndex
+[155 of 161] Compiling Data.Unfoldable
+[156 of 161] Compiling Data.NonEmpty
+[157 of 161] Compiling Data.Array.NonEmpty.Internal
+[158 of 161] Compiling Test.Main
+[159 of 161] Compiling Data.Array
+[161 of 161] Compiling Data.Array.Partial
+[160 of 161] Compiling Data.Array.NonEmpty
+[WARNING 1/1 UnusedFFIImplementations] ../gopurs-st/src/Control/Monad/ST/Uncurried.purs:17:1
+
+      v
+  17  module Control.Monad.ST.Uncurried where
+  18  
+  19  import Control.Monad.ST.Internal (ST, Region)
+      ...
+  97    STFn8 a b c d e f g h t r -> a -> b -> c -> d -> e -> f -> g -> h -> ST t r
+  98  foreign import runSTFn9 :: forall a b c d e f g h i t r.
+  99    STFn9 a b c d e f g h i t r -> a -> b -> c -> d -> e -> f -> g -> h -> i -> ST t r
+                                                                                         ^
+
+  The following definitions in the foreign module for module Control.Monad.ST.Uncurried are unused:
+    mkSTFn10
+    runSTFn10
+
+           Src   Lib   All
+Warnings     0     1     1
+Errors       0     0     0
+
+✓ Build succeeded.
+
+=== Generating Go code with gopurs ===
+=== Compiling and running Go test binary ===
+Test foldableArray instance
+panic: FFI not implemented: arrayFrom1UpTo
+
+goroutine 1 [running]:
+gopurs/output/Test%2eMain.init.func1({0x600294050?, 0x100cd74e0?, 0x100cc8108?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Test.Main/Test_Main_ffi.go:5 +0x2c
+gopurs/output/gopurs_runtime.Apply({0x38, 0x100bc2500, 0x1a2b7e1e8ae8}, {0x100a55d30?, 0x40?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/gopurs_runtime/runtime.go:400 +0x60
+gopurs/output/Test%2eMain.Call_testFoldableFWith.func1({0x1a2b7e1f4410?, 0x0?, 0x1a2b7e1e8bd8?}, {0x100a127c8?, 0x3?, 0x100bd82b8?}, {0x1a2b7e1e8c28?, 0x100a79cf0?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Test.Main/Test_Main.go:2950 +0x74
+gopurs/output/gopurs_runtime.Apply2.func1({0x100a12810?, 0x100c148fc?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/gopurs_runtime/runtime.go:442 +0x4c
+gopurs/output/gopurs_runtime.Apply({0x0, 0x1a2b7e15a0b0, 0x3001e8ca8}, {0x100cd42e0?, 0x100cc8108?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/gopurs_runtime/runtime.go:400 +0x60
+gopurs/output/Test%2eMain.Get_main.func1.1({0x1a2b7e1e8cf8?, 0x100a6329c?, 0x18?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Test.Main/Test_Main.go:1704 +0x3c
+gopurs/output/gopurs_runtime.Apply({0x0, 0x100bcbb40, 0x1a2b7e156018}, {0x1a2b7e15a0c0?, 0x1?, 0x1a2b7e15a0e0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/gopurs_runtime/runtime.go:400 +0x60
+gopurs/output/Effect.init.func1.2({0x100bcbb40?, 0x1a2b7e156018?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Effect/Effect_ffi.go:51 +0x64
+gopurs/output/Effect.BindE(0x0?, 0x1a2b7e1e8dd8, {0x0?, 0x1a2b7e1ee180?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Effect/Effect_ffi.go:11 +0x3c
+gopurs/output/Effect.init.func1({0x2?, 0x0?, 0x1a2b7e1ee180?}, {0x100a127c8?, 0x100bd8ce8?, 0x100bd7ce8?}, {0x1a2b7e1e8ea8?, 0x100a7b030?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Effect/Effect_ffi.go:57 +0x68
+gopurs/output/gopurs_runtime.Apply2.func1({0x100a12810?, 0x100c14bbc?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/gopurs_runtime/runtime.go:442 +0x4c
+gopurs/output/gopurs_runtime.Apply({0x100a9ab83, 0x5, 0x0}, {0x0?, 0x0?, 0x0?})
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/gopurs_runtime/runtime.go:400 +0x60
+main.main()
+	/Users/0x1/Documents/htdocs/gopurs-foldable-traversable/output/Test.Main/main/main.go:18 +0xb0
