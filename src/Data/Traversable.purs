@@ -100,7 +100,7 @@ sequenceDefault
 sequenceDefault = traverse identity
 
 instance traversableArray :: Traversable Array where
-  traverse = traverseArrayImpl apply map pure
+  traverse = traverseArrayImpl apply map pure append
   sequence = sequenceDefault
 
 foreign import traverseArrayImpl
@@ -108,6 +108,7 @@ foreign import traverseArrayImpl
    . (forall x y. m (x -> y) -> m x -> m y)
   -> (forall x y. (x -> y) -> m x -> m y)
   -> (forall x. x -> m x)
+  -> (Array b -> Array b -> Array b)
   -> (a -> m b)
   -> Array a
   -> m (Array b)

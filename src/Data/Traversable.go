@@ -1,5 +1,12 @@
 
-func TraverseArrayImpl(apply func(interface{}, interface{}) interface{}, mapFn func(func(interface{}) interface{}, interface{}) interface{}, pure func(interface{}) interface{}, f func(interface{}) interface{}, arrayVal []interface{}) interface{} {
+func TraverseArrayImpl(
+	apply func(interface{}, interface{}) interface{},
+	mapFn func(func(interface{}) interface{}, interface{}) interface{},
+	pure func(interface{}) interface{},
+	concat2 func(interface{}) func(interface{}) interface{},
+	f func(interface{}) interface{},
+	arrayVal []interface{},
+) interface{} {
 	array1 := func(a interface{}) interface{} {
 		return []interface{}{a}
 	}
@@ -18,17 +25,6 @@ func TraverseArrayImpl(apply func(interface{}, interface{}) interface{}, mapFn f
 		}
 	}
 	
-	concat2 := func(xsVal interface{}) interface{} {
-		return func(ysVal interface{}) interface{} {
-			xs := gopurs_runtime.Unbox[[]interface{}](xsVal)
-			ys := gopurs_runtime.Unbox[[]interface{}](ysVal)
-			res := make([]interface{}, 0, len(xs)+len(ys))
-			res = append(res, xs...)
-			res = append(res, ys...)
-			return res
-		}
-	}
-	
 	var goFn func(int, int) interface{}
 	goFn = func(bot, top int) interface{} {
 		switch top - bot {
@@ -42,7 +38,9 @@ func TraverseArrayImpl(apply func(interface{}, interface{}) interface{}, mapFn f
 			return apply(apply(mapFn(array3, f(arrayVal[bot])), f(arrayVal[bot+1])), f(arrayVal[bot+2]))
 		default:
 			pivot := bot + ((top - bot) / 4) * 2
-			return apply(mapFn(concat2, goFn(bot, pivot)), goFn(pivot, top))
+			return apply(mapFn(func(x interface{}) interface{} {
+				return concat2(x)
+			}, goFn(bot, pivot)), goFn(pivot, top))
 		}
 	}
 	
