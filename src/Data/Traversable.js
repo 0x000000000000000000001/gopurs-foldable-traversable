@@ -28,8 +28,9 @@ export const traverseArrayImpl = (function () {
   return function (apply) {
     return function (map) {
       return function (pure) {
-        return function (f) {
-          return function (array) {
+        return function (concat2_) {
+          return function (f) {
+            return function (array) {
             function go(bot, top) {
               switch (top - bot) {
               case 0: return pure([]);
@@ -49,4 +50,5 @@ export const traverseArrayImpl = (function () {
       };
     };
   };
+};
 })();
