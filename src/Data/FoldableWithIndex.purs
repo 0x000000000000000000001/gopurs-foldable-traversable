@@ -26,7 +26,6 @@ import Data.Functor.App (App(..))
 import Data.Functor.Compose (Compose(..))
 import Data.Functor.Coproduct (Coproduct, coproduct)
 import Data.Functor.Product (Product(..))
-import Data.FunctorWithIndex (mapWithIndex)
 import Data.Identity (Identity(..))
 import Data.Maybe (Maybe(..))
 import Data.Maybe.First (First)
@@ -117,9 +116,25 @@ foldMapWithIndexDefaultL
 foldMapWithIndexDefaultL f = foldlWithIndex (\i acc x -> acc <> f i x) mempty
 
 instance foldableWithIndexArray :: FoldableWithIndex Int Array where
-  foldrWithIndex f z = foldr (\(Tuple i x) y -> f i x y) z <<< mapWithIndex Tuple
-  foldlWithIndex f z = foldl (\y (Tuple i x) -> f i y x) z <<< mapWithIndex Tuple
+  foldrWithIndex = foldrWithIndexImpl
+  foldlWithIndex = foldlWithIndexImpl
   foldMapWithIndex = foldMapWithIndexDefaultR
+
+-- Direct index loops: the previous implementation built an intermediate array
+-- of `Tuple Int a` and then folded it generically.
+foreign import foldlWithIndexImpl
+  :: forall a b
+   . (Int -> b -> a -> b)
+  -> b
+  -> Array a
+  -> b
+
+foreign import foldrWithIndexImpl
+  :: forall a b
+   . (Int -> a -> b -> b)
+  -> b
+  -> Array a
+  -> b
 
 instance foldableWithIndexMaybe :: FoldableWithIndex Unit Maybe where
   foldrWithIndex f = foldr $ f unit
